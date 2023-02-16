@@ -5,43 +5,33 @@ html {
     box-sizing: inherit;
 }
 
-h1 {
-    font-size: 20px;
+/* globales */
+
+a{
+    text-decoration: none;
     color: black;
-
-}
-h1 span{
-    color: #037bc0;
 }
 
-h2 span {
-    color: green;
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Box model */
-.sobre-nosotros {
-    background-color: red;
-    width: 200px;
-    padding: 25px;    
+.contenedor-navegacion{
+    border-top: #e1e1e1 solid 1px;
 }
 
-.sobre-empresa {
-    background-color: blue;
-    width: 500px;
-    padding: 100px;    
+.nav-principal {
+    /* border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 1px; */
+    padding: 20px 0px;
+}
+.hero{
+    height: 550px;
+    background-image: url("../img/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.nombre-sitio {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-/* Display inline or block */
-
-p{
-  background-color: rebeccapurple;
-  /* No funcionan cuando esta en line el ancho y alto */
-  width: 200px;
-  height: 100px;
-  display: inline;  
-}
+/* Header and navigation */
