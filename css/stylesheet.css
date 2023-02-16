@@ -19,6 +19,7 @@ a{
 
 .contenedor-navegacion{
     border-top: #e1e1e1 solid 1px;
+
 }
 
 .nav-principal {
@@ -26,6 +27,8 @@ a{
     border-top-style: solid;
     border-width: 1px; */
     padding: 20px 0px;
+    display: flex;
+        /* justify-content: center */
 }
 .hero{
     height: 550px;
