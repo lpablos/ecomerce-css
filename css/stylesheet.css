@@ -7,23 +7,6 @@ html {
 
 /* globales */
 
-.nombre-sitio {
-    margin-top: 5rem;
-    text-align: center;
-}
-/* .nombre-sitio span {
-    color: #037bc0;
-}
-.contenedor-navegacion {
-    border-top: .1rem solid #e1e1e1;
-}
-.nav-principal {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
 a{
     text-decoration: none;
     color: black;
@@ -32,6 +15,18 @@ a{
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Header y navegacion */
+
+.nombre-sitio{
+    margin: 50px 0;
+    text-align: center;
+}
+
+
+.nombre-sitio span{
+    color: #037bc0;
 }
 
 .contenedor-navegacion{
@@ -54,4 +49,8 @@ a{
     background-size: cover;
 }
 
-/* Header and navigation */
+.listado-categorias{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+}
