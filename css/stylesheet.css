@@ -7,6 +7,23 @@ html {
 
 /* globales */
 
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+/* .nombre-sitio span {
+    color: #037bc0;
+}
+.contenedor-navegacion {
+    border-top: .1rem solid #e1e1e1;
+}
+.nav-principal {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
 a{
     text-decoration: none;
     color: black;
@@ -27,8 +44,8 @@ a{
     border-top-style: solid;
     border-width: 1px; */
     padding: 20px 0px;
-    display: flex;
-        /* justify-content: center */
+    display: flex;    
+    justify-content: space-around;
 }
 .hero{
     height: 550px;
