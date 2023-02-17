@@ -12,6 +12,10 @@ a{
     color: black;
 }
 
+img{
+    width: 100%;
+}
+
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
@@ -31,7 +35,6 @@ a{
 
 .contenedor-navegacion{
     border-top: #e1e1e1 solid 1px;
-
 }
 
 .nav-principal {
@@ -51,6 +54,9 @@ a{
 
 .listado-categorias{
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    /* rf -> Significa fraccion  */
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 100px;
+    /* propiedad para agregar separacion -> gap */
+    gap: 20px;
 }
