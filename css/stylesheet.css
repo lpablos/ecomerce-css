@@ -1,11 +1,27 @@
 html {
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    font-size: 62.5%; /* 1REM = 10 px */
   }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+body{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem; /*16px a rems*/
+}
+
 /* globales */
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+
+h3{
+    /* Equivalente a 30 px ==> 30 rem */
+    font-size: 3rem;   
+}
 
 a{
     text-decoration: none;
@@ -19,15 +35,16 @@ img{
 }
 
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem; /*1200px a rems*/
     margin: 0 auto;
 }
 
 /* Header y navegacion */
 
 .nombre-sitio{
-    margin: 50px 0;
+    margin: 5rem 0; /*50px a rems*/
     text-align: center;
+    font-size: 4rem; /* Equivalente a 40px a rem*/
 }
 
 
@@ -43,7 +60,7 @@ img{
     /* border-color: #e1e1e1;
     border-top-style: solid;
     border-width: 1px; */
-    padding: 20px 0px;
+    padding: 2rem 0px; /*20px a rems*/
     display: flex;    
     justify-content: space-around;
 }
@@ -64,14 +81,14 @@ img{
     surta efecto */
     display: block;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem; /*20px a rems*/
+    font-size: 2rem; /*20px a rems*/
 }
 
 .categoria a:hover{
     background-color: #037bc0;
     color: #ffffff;
-    border-bottom-right-radius: 10px;    
+    border-bottom-right-radius: 1rem; /*10px a rem*/    
 }
 
 .listado-categorias{
@@ -80,5 +97,5 @@ img{
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: 100px 100px; */
     /* propiedad para agregar separacion -> gap */
-    gap: 20px;
+    gap: 2rem; /*20px a rem*/
 }
