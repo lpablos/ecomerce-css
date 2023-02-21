@@ -1,5 +1,9 @@
 html {
+    /*  box-sizing: border-box .- sirve cuando se añada 
+    with a un elemento y despues se agrege un padding
+    no mofique el tamaño de ese elmento*/
     box-sizing: border-box;    
+    /* Este es para convertir pixeles a rem 1rem == 10px */
     font-size: 62.5%; /* 1REM = 10 px */
   }
 *, *:before, *:after {
@@ -11,11 +15,22 @@ body{
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem; /*16px a rems*/
+    /* Define un interlineado de texto */
+    line-height: 2;
 }
 
 /* globales */
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+
+h1{
+    font-size: 5rem;
+}   
+
+h2{
+    font-size: 3rem;
 }
 
 h3{
@@ -44,7 +59,7 @@ img{
 .nombre-sitio{
     margin: 5rem 0; /*50px a rems*/
     text-align: center;
-    font-size: 4rem; /* Equivalente a 40px a rem*/
+    
 }
 
 
@@ -67,10 +82,18 @@ img{
 .hero{
     height: 550px;
     background-image: url("../img/principal.jpg");
+    /* No repetir la imagen  */
     background-repeat: no-repeat;
+    /* Cubrir con toda la imagen */
     background-size: cover;
+    /* Sirve para mostrar cierta parte de una imagen */
+    background-position: center center;
 }
 /* Categorias */
+.categorias{
+    padding-top: 5rem;
+}
+
 .categorias h2{
     text-align: center;
 }
