@@ -122,3 +122,27 @@ img{
     /* propiedad para agregar separacion -> gap */
     gap: 2rem; /*20px a rem*/
 }
+
+/* Bloque nosotros */
+
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url('../img/nosotros.jpg');
+    padding: 10rem 0;
+    /* La imagen muestra izquida centrada */
+    background-position: left center;
+    background-repeat: no-repeat;
+    /* background-image: linear gradient, aplica a la imagen; */
+    background-image: 100%, 120rem;
+}
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 8rem;
+}
+.texto-nosotros{
+    /* Posiciona el elemnto de la 2 a la 3 */
+    grid-column: 2 / 3;
+    color: white;
+
+}
