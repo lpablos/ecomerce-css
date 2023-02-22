@@ -125,7 +125,8 @@ img{
 
 /* Bloque nosotros */
 
-.sobre-nosotros{
+/* Aqui el degrado de imagen */
+.sobre-nosotros {
     background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url('../img/nosotros.jpg');
     padding: 10rem 0;
     /* La imagen muestra izquida centrada */
@@ -135,14 +136,38 @@ img{
     background-image: 100%, 120rem;
 }
 
+
 .sobre-nosotros-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 8rem;
-}
-.texto-nosotros{
-    /* Posiciona el elemnto de la 2 a la 3 */
-    grid-column: 2 / 3;
-    color: white;
+    /* Usar ccs grid .- para definir el layout de tu sitio web
+    como pueden ser las columnas o contenedores de elementos  */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,1fr); */
+    /* Aplica separacion */
+    /* column-gap: 8rem; */
+
+
+
+    /* Cuando usar flex box .- alineacion y distribucion de
+    los elementos que estaran dentro de contenedores*/
+    /* Implementando con flex */
+    display: flex;
+    justify-content: flex-end;
 
 }
+
+.texto-nosotros{
+    /* Implementando flex box */
+    flex-basis: 50%;
+    color: #ffffff;
+    padding-left: 10rem;
+
+    /* Implementando grid */
+    /* Posiciona el elemnto del grid 2 a la 3 */
+    /* grid-column: 2 / 3;
+    color: white; */
+
+}
+
+/* Cuando usar flex box .- alineacion y distribucion de
+los elementos que estaran dentro de contenedores*/
+
