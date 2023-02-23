@@ -51,8 +51,24 @@ img{
 
 .contenedor{
     max-width: 120rem; /*1200px a rems*/
-    margin: 0 auto;
+   margin: 0 auto;
 }
+
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    /* Que se anima, tiempo, efecto */
+    transition: background-color 0.3s ease-out;
+}
+
+.btn:hover{
+    background-color: #769c02;
+}
+
 
 /* Utilidades */
 
@@ -207,11 +223,15 @@ img{
     font-weight: 900;
 }
 
-.texto-producto a{
-    background-color: #8cbc00;
-    display: block;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 1rem;
+
+
+/* 
+Demostracion del efecto con la imagen
+
+.producto img:hover{
+    transition: transform 0.3s ease-out;
 }
+
+.producto img:hover{
+    transform: scale(0.8); 
+} */
