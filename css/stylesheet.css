@@ -294,15 +294,7 @@ img{
     font-weight: 900;
 }
 
-/* 
-Importante: con flex box o grid !!! 
 
-siempre que lo aplicques tiene que ir al elemento 
-padre por que ese solo va a afectar el primer nive
-de hijos. pero no a sus elementos nietos del hijo
-donde se aplica
-
- */
 
 
 /* 
@@ -316,9 +308,72 @@ Demostracion del efecto con la imagen
     transform: scale(0.8); 
 } */
 
-/* Fotter */
+/* Footeer */
 
-.listado-footer{
+.site-footer{
+    border-top: 0.1rem solid #e1e1e1;
+    /* Elemento hacia afuera */
+    margin-top: 5rem; 
+    /* Elemento hacia adentro */
+    padding-top: 5rem;
+}
+
+.grid-footer{
+    /* COn flexbox */
+    /* display: flex;
+    gap: 2rem; */
+
+    /* Con grid */
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* .grid-footer div{ */
+    /* Con flexbox */
+    /* es el factor de crecimiento
+    que tiene un div */
+    /* flex: 1; */
+
+    /* Con grid */
+/* } */
+
+.site-footer h3{
+    margin-bottom: 0.5rem;
+}
+
+
+.footer-menu a{
+    display: block;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+
+/* NOTAS DEL CURSO */
+
+/* 
+Importante: con flex box o grid !!! 
+
+siempre que lo aplicques tiene que ir al elemento 
+padre por que ese solo va a afectar el primer nive
+de hijos. pero no a sus elementos nietos del hijo
+donde se aplica
+ */
+
+
+ /* 
+ Los selectores no deben de ser mas de 3 elementos
+ por que es un estandar para maquetear
+  */
+
+ /* ++++++++++++++++++++++++++++++++++++++++++ */
+
