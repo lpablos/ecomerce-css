@@ -199,6 +199,55 @@ img{
     padding-top: 5rem;
 }
 
+/* Aplicamos el grid a los elementos */
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* Separacion columnas */
+    /* column-gap: 2rem; */
+    /* Separacion en row */
+    /* row-gap: 2rem; */
+    /* De forma resumiada el gap */
+    gap: 2rem;
+    /* grid-template-rows: repeat(3,1fr); */
+}
+
+/* Aqui poscionamos a lao elentos en el grid */
+.producto:nth-child(1){
+    /* De la 1 a la 7 extiendete */
+    /* Forma corta */
+    grid-column: 1 / 7;
+    /* Forma larga */
+    /* grid-column-start: 1;
+    grid-column-end: 7; */
+    
+}
+
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
 .producto{
     background-color: #037bc0;
 }
@@ -223,6 +272,15 @@ img{
     font-weight: 900;
 }
 
+/* 
+Importante: con flex box o grid !!! 
+
+siempre que lo aplicques tiene que ir al elemento 
+padre por que ese solo va a afectar el primer nive
+de hijos. pero no a sus elementos nietos del hijo
+donde se aplica
+
+ */
 
 
 /* 
