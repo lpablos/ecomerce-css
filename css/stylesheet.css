@@ -412,6 +412,28 @@ Demostracion del efecto con la imagen
     margin: 0 auto;
 }
 
+/* Galeria */
+
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+/* Aqui las imagenes no tienen la misma alguta
+se usa  object-fit:, previamente definiendo altura
+y ancho para agustar correctamente*/
+.galeria img{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+
 
 
 
