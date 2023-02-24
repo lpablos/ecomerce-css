@@ -63,6 +63,7 @@ img{
     padding: 1rem;
     /* Que se anima, tiempo, efecto */
     transition: background-color 0.3s ease-out;
+    text-align: center;
 }
 
 .btn:hover{
@@ -74,6 +75,10 @@ img{
 
 .text-center{
     text-align: center;
+}
+
+.max-with-30{
+    max-width: 30rem;
 }
 
 /* Header y navegacion */
@@ -368,6 +373,41 @@ Demostracion del efecto con la imagen
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* blog */
+
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.entrada{
+    border-bottom: 0.2rem solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border-bottom: none;
+}
+
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.entrada-meta p{
+    font-weight: 700;
+}
+
+.entrada-meta span{
+    color: #037bc0;
+}
+
+.blog{
+
 }
 
 
