@@ -163,6 +163,7 @@ img{
     background-repeat: no-repeat;
     /* background-image: linear gradient, aplica a la imagen; */
     background-image: 100%, 120rem;
+    margin-top: 4rem;
 }
 
 
@@ -406,8 +407,9 @@ Demostracion del efecto con la imagen
     color: #037bc0;
 }
 
-.blog{
-
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
 }
 
 
