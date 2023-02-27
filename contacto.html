@@ -30,26 +30,39 @@
 
         <main class="contenido-principal contenedor">
             <h2 class="text-center">Contacto</h2>   
-            <form action="">
+            <form class="formulario">
                 <!-- Agrupar campos -->
                 <fieldset>
                     <legend>Tus datos</legend>
 
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" type="text" placeholder="Tu Nombre" value=""/>
-                    
-                    <label for="asunto">Asunto</label>
-                    <input id="asunto" type="text" placeholder="Tu Asunto" value=""/>
-                    
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="Tu Email" value=""/>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Tu Nombre" value=""/>
+                    </div>
+                    <div class="campo">
+                        <label for="asunto">Asunto</label>
+                        <input id="asunto" type="text" placeholder="Tu Asunto" value=""/>
 
-                    <label for="tel">Télefono</label>
-                    <input id="tel" type="tel" placeholder="Tu Teléfono" value=""/>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Tu Email" value=""/>
+
+                    </div>
+                    <div class="campo">
+                        <label for="tel">Télefono</label>
+                        <input id="tel" type="tel" placeholder="Tu Teléfono" value=""/>
+
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mesaje" id="mensaje" cols="30" rows="10">                        
+                        </textarea>
+                    </div>
                     
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mesaje" id="mensaje" cols="30" rows="10">                        
-                    </textarea>
+                    
+
+                    
 
                 </fieldset>
                 <fieldset>
