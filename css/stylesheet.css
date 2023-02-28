@@ -64,10 +64,12 @@ img{
     /* Que se anima, tiempo, efecto */
     transition: background-color 0.3s ease-out;
     text-align: center;
+    border: none;
 }
 
 .btn:hover{
     background-color: #769c02;
+    cursor: pointer;
 }
 
 
@@ -464,7 +466,15 @@ y ancho para agustar correctamente*/
 
 .campo label{
     /* Da ancho pretedeterminado a los elementos */
+    /* Es un ancho fijo para el label */
     flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]), .campo textarea, .campo select{
+    /* factor de crecimiento */
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
 }
 
 
