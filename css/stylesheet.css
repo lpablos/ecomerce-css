@@ -168,7 +168,18 @@ img{
 
 /* Categorias */
 .categorias{
-    padding-top: 5rem;
+    padding: 5rem 0;
+}
+
+
+.categoria{
+    margin-bottom: 2rem;
+}
+
+@media (min-with: 768px){
+    .categoria{
+        margin-bottom: 0rem;
+    }
 }
 
 /* Se comento para implementar una utilidad */
@@ -176,6 +187,10 @@ img{
 .categorias h2{
     text-align: center;
 } */
+
+.categoria img{
+    width: 100%;
+}
 
 .categoria a{
     /* a es inline, para centrar se tiene 
@@ -193,14 +208,17 @@ img{
     border-bottom-right-radius: 1rem; /*10px a rem*/    
 }
 
-.listado-categorias{
-    display: grid;
-    /* rf -> Significa fraccion  */
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 100px 100px; */
-    /* propiedad para agregar separacion -> gap */
-    gap: 2rem; /*20px a rem*/
+@media(min-width:768px){
+    .listado-categorias{
+        display: grid;
+        /* rf -> Significa fraccion  */
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: 100px 100px; */
+        /* propiedad para agregar separacion -> gap */
+        gap: 2rem; /*20px a rem*/
+    }   
 }
+
 
 /* Bloque nosotros */
 
